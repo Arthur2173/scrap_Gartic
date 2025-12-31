@@ -13,7 +13,7 @@ soup = BeautifulSoup(response.text, 'html.parser')
 #pegando os dados da pagina usando find_all() os dados estao na tag button
 words = soup.find_all("button")
 
-item_count = int(input("lenght: "))
+item_count = int(input("length: "))
  
 for word in words:
      #tratando as palavras usando replace,strip(). usando o replace para tirar os espaços do meio das palavras pois
